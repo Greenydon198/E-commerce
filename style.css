@@ -5,15 +5,13 @@
 }
 
 body{
-    height: 1000px;
-    /* background-color: blue; */
     background: #FAFAFA;
 }
 
 a{
     text-decoration: none !important;
 }
-
+/* ----------------navigation bar =============================*/
 .navbar{
     background-color: white;
 }
@@ -29,12 +27,12 @@ a{
 .nav-icons a{
     margin-inline:10px ;
 }
+
+/* -------------------hero============================== */
 .hero{
     margin-top:30px ;
     border-radius: 20px;
     background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%);
-    /* background-image: url(./Img/background.png); */
-    /* border-image-width: 10px; */
 }
 
 .explore{
@@ -86,13 +84,14 @@ a{
     font-style: normal;
     font-weight: 400;
 }
+/* -----------------Top collections=================== */
 .col-tx1{
     color: #000;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px; /* 156.25% */
+    line-height: 25px; 
     border-bottom: 2px solid #FF5E3A;
 }
 .col-tx2{
@@ -101,7 +100,7 @@ a{
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 25px; /* 104.167% */
+    line-height: 25px; 
 }
 .col-btn{
     color: #4F5665;
@@ -121,7 +120,7 @@ a{
     font-size: 16px;
     font-style: normal;
     font-weight: 900;
-    line-height: 25px; /* 156.25% */
+    line-height: 25px; 
 }
 .coll-bottom{
     overflow-x: auto;
@@ -135,7 +134,6 @@ a{
 }
 .cards{
     width: 380px;
-    /* height: 429.162px; */
     margin-inline: 1%;
     border:none;
     display: inline-block;
@@ -146,12 +144,10 @@ a{
 
 }
 .cards-img-top{
-    /* width: 214px; */
-    /* height: 219px;  */
+
     object-fit:center;
     padding: 90px;
     padding-top:60px;
-    /* text-align: center !important; */
     border-radius: 25px;
 }
 .card-text{
@@ -162,7 +158,6 @@ a{
     font-weight: 400;
 }
 .cards-body a{
-    /* height: 80px; */
     border-radius: 10px;
     background: #FF5E3A;
     width: 80px;
@@ -178,41 +173,24 @@ a{
 .cards-body a:hover{
     border:1px solid orange !important;
 }
+
+/* -----------------Latest Collections--------------------------- */
 .posters{
     display: grid;
-    grid-template-columns:  auto auto;
-    grid-template-rows: auto auto; 
-    grid-gap: 30px;
-    /* grid-template-areas:
-    "a b"
-    "c b"; */
+    grid-template-columns:  38vw 40vw;
+    grid-template-rows: 16vw 17vw; 
+    grid-gap: 3vw;
+}
+.posters img{
+    width: 40vw;
 }
 .pink-poster{
-    /* grid-area: b; */
     grid-row-start: span 2;
-    /* background-image: url(./Img/pink-poster.svg); */
 }
-.red{
-    /* grid-area: a; */
-    /* background-image: url(./Img/red_Poster.svg); */
-}
-.yellow{
-    /* grid-area: c; */
-    /* background-image: url(./Img/yellow-Poster.svg); */
-}
-@media only screen and (max-width: 1300px) {
-    .posters{
-      display: flex;
-      flex-direction:column;
-      flex-wrap: wrap;
-    }
-    .posters img{
-        width:70vw;
-    }
-}
+
+/* -----------------------------2021 Collection============================== */
 .shop .card{
     width: 285px;
-    /* height: 324px; */
     border-radius: 25px;
     border: 0.5px solid rgba(144, 144, 144, 0.25);
     background: #F0F0F0;
@@ -225,7 +203,6 @@ a{
 }
 
 .card-body a{
-    /* height: 80px; */
     border-radius: 10px;
     background: #FF5E3A;
     width: 80px;
@@ -241,13 +218,15 @@ a{
 .card-body a:hover{
     border:1px solid orange !important;
 }
+
+/* -------------------------------------FOOTER=============================== */
 footer{
     color: #4F5665;
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px; /* 187.5% */
+    line-height: 30px; 
     background-color: rgba(252, 203, 144, 0.15);
     padding: 40px;
 }
@@ -257,7 +236,7 @@ footer li:first-child{
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 166.667% */
+    line-height: 30px;
 }
 footer a{
     text-decoration: none;
@@ -266,7 +245,10 @@ footer a{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px; /* 187.5% */
+    line-height: 30px; 
+}
+footer a:hover{
+    color:#FF5E3A;
 }
 footer ul{
     list-style: none;
@@ -275,5 +257,7 @@ footer ul{
 @media only screen and (max-width: 650px) {
     footer{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
   }
